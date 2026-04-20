@@ -121,3 +121,9 @@ export const techMarquee = [
   "Nginx",
   "PM2",
 ] as const;
+
+
+export const CYCLE = [
+  { text: "Muhammed Fayiz CH",   color: "#4D4D4D" },
+  { text: "Full-Stack MERN Developer", color: "#e8652a" },
+];
