@@ -32,9 +32,11 @@ function HeroCycle() {
         }, 38);
         return () => clearTimeout(t);
       } else {
-        // fully erased → switch phase
-        setPhaseIdx(i => (i + 1) % CYCLE.length);
-        setMode("typing");
+        const t = setTimeout(() => {
+          setPhaseIdx(i => (i + 1) % CYCLE.length);
+          setMode("typing");
+        }, 0);
+        return () => clearTimeout(t);
       }
     }
   }, [displayed, mode, phaseIdx]);

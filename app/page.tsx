@@ -3,6 +3,7 @@
 import HeroCycle from "@/components/hero";
 import Reveal from "@/components/reveal";
 import Style from "@/components/style";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { contacts, projects, skills, strengths } from "./data/portfolio";
 
@@ -85,7 +86,7 @@ export default function Portfolio() {
           {/* ── right column — photo (completely independent, never shifts) ── */}
           <div className="photo-col" style={{ animation:"float 7s ease-in-out infinite" }}>
             <div className="photo-frame">
-              <img src={"/my-photo.jpg"} alt="Muhammed Fayiz CH" />
+              <Image src="/my-photo.jpg" alt="Muhammed Fayiz CH" width={360} height={480} priority />
               <div className="photo-badge">
                
               </div>
@@ -122,7 +123,7 @@ export default function Portfolio() {
                 <article className="proj-card">
                   <div className="proj-thumb" style={{ background: p.accent }}>
                     {p.image
-                      ? <img src={p.image} alt={p.name} />
+                      ? <Image src={p.image} alt={`${p.name} project screenshot`} width={640} height={360} />
                       : <div style={{ width:"100%",height:"100%",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'JetBrains Mono',monospace",fontSize:12,color:"#ccc" }}>coming soon</div>
                     }
                     <span className="proj-num">{p.number}</span>
