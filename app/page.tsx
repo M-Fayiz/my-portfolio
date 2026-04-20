@@ -87,11 +87,7 @@ export default function Portfolio() {
             <div className="photo-frame">
               <img src={"/my-photo.jpg"} alt="Muhammed Fayiz CH" />
               <div className="photo-badge">
-                <div>
-                  <div className="badge-name">Muhammed Fayiz CH</div>
-                  <div className="badge-role">Full-Stack MERN Dev</div>
-                </div>
-                <div className="badge-dot"><span />online</div>
+               
               </div>
             </div>
           </div>

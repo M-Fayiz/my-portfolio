@@ -68,7 +68,28 @@ function Style(){
         .photo-col{display:flex;flex-direction:column}
         .photo-frame{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 2px 0 0 #e8652a33,0 24px 64px rgba(0,0,0,.1);border:1px solid #ebebeb}
         .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-        .photo-badge{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-radius:11px;padding:11px 14px;display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,.8)}
+        .photo-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 16px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),   /* strong black at bottom */
+    rgba(0, 0, 0.4, 0.4),    /* mid fade */
+    rgba(0, 0, 0, 0)       /* transparent top */
+  );
+
+  border-radius: 0 0 12px 12px; /* only bottom rounded */
+}
         .badge-name{font-size:12px;font-weight:600;color:#0f0f0f;letter-spacing:-.01em}
         .badge-role{font-family:'JetBrains Mono',monospace;font-size:10px;color:#adadad;margin-top:3px}
         .badge-dot{display:flex;align-items:center;gap:5px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#555}
