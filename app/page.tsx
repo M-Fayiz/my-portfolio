@@ -77,7 +77,7 @@ export default function Portfolio() {
             </div>
 
             <div className="stats">
-              {[["6+","Projects shipped"],["2+","Years building"],["15+","Integrations"]].map(([n,l]) => (
+              {[["5+","Projects shipped"],["1+","Years building"],["15+","Integrations"]].map(([n,l]) => (
                 <div key={l}><strong>{n}</strong><span>{l}</span></div>
               ))}
             </div>
