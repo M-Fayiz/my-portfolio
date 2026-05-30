@@ -13,7 +13,7 @@ export const projects = [
     image: "/codeaspire.png",
     accent: "#e8652a",
     github: "https://github.com/M-Fayiz/CodeAspire-an-E-Learning-Platform",
-    live: "#",
+    live: "https://www.codeaspire.online/",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const projects = [
     image: "/fruitkha.png",
     accent: "#2d7a4f",
     github: "https://github.com/M-Fayiz/FRUITKHA-E-Commerce",
-    live: "#",
+    live: "https://fruitkha.codeaspire.online/",
   },
   {
     id: 3,
